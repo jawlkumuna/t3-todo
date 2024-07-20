@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { db } from "~/server/db";
 
 export default async function HomePage() {
@@ -7,7 +6,7 @@ export default async function HomePage() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
       <ul>
-        {posts.map((post: any) => (
+        {posts.map((post) => (
           <li key={post.id} className="p-3 ring-1 m-2 rounded-lg ring-slate-500 bg-slate-900">
             {post.name}
           </li>
